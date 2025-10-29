@@ -1,11 +1,12 @@
 # Author: Zach Fryer
 # Title: Area/Perimeter Calculator
 # Date: 29/10/2025
-# Version 1.2
+# Version 1.3
 
 print("Hello User, welcome to my Area/Perimeter calculator! \nPlease answer the following questions so I can calculate for you!\n\n")
 dimensions = input("Is your shape 2D or 3D? ").lower()
-while True:
+repeat = ""
+while repeat == "":
     if dimensions == "2d":
         while True:
             try:
@@ -27,15 +28,13 @@ while True:
             except ValueError:
                 print(f"Please enter a value\n")
         print()
-
         while True:
             area = length * width
             perimeter = length * 2 + width * 2
-            print(f"Area = {area}\nPerimeter = {perimeter}\n\n\n")
+            print(f"Area = {area}\nPerimeter = {perimeter}\n\n")
             break
-
-        input("Would you like to continue?\nPress any key to continue\nPress <ENTER> to repeat")
-
+        repeat = input("Would you like to continue?\nPress any key to continue,\nPress <ENTER> to repeat:  ")
+    
     elif dimensions == "3d":
         while True:
             try:
@@ -66,9 +65,10 @@ while True:
                             break
                     except ValueError:
                         print(f"Please enter a value\n")
-        
+        print()
         while True:
             surface_area = 2 * (height*width + width*length + length*height)
             volume = length * height * width
-            print(f"Surface Area = {surface_area}\nVolume = {volume}\n\n\n")
+            print(f"Surface Area = {surface_area}\nVolume = {volume}\n\n")
             break
+        repeat = input("Would you like to continue?\nPress any key to continue,\nPress <ENTER> to repeat:  ")
