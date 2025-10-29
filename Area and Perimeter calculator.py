@@ -11,7 +11,7 @@ while repeat == "":
         if dimensions == "2d":
             while True:
                 try:
-                    length = float(input(f"Please enter the length of the shape: "))
+                    length = float(input(f"Please enter the length of the shape in cm: "))
                     if length <= 0:
                         print("Please enter a number above 0\n")
                     else:
@@ -21,7 +21,7 @@ while repeat == "":
             print()
             while True:
                 try:
-                    width = float(input(f"Please enter the width of the shape: "))
+                    width = float(input(f"Please enter the width of the shape in cm: "))
                     if width <=0:
                         print("Please enter a number above 0\n")
                     else:
@@ -32,13 +32,13 @@ while repeat == "":
             while True:
                 area = length * width
                 perimeter = length * 2 + width * 2
-                print(f"Area = {area}\nPerimeter = {perimeter}\n\n")
+                print(f"Area = {area} cm\nPerimeter = {perimeter} cm\n\n")
                 break
             repeat = input("Would you like to continue?\nPress any key to continue,\nPress <ENTER> to repeat:  ")
         elif dimensions == "3d":
             while True:
                 try:
-                    length = float(input(f"Please enter the length of the shape: "))
+                    length = float(input(f"Please enter the length of the shape in cm: "))
                     if length <= 0:
                         print("Please enter a number above 0\n")
                     else:
@@ -48,7 +48,7 @@ while repeat == "":
             print()
             while True:
                 try:
-                    width = float(input(f"Please enter the width of the shape: "))
+                    width = float(input(f"Please enter the width of the shape in cm: "))
                     if width <=0:
                         print("Please enter a number above 0\n")
                     else:
@@ -58,7 +58,7 @@ while repeat == "":
             print()
             while True:
                         try:
-                            height = float(input(f"Please enter the width of the shape: "))
+                            height = float(input(f"Please enter the height of the shape in cm: "))
                             if height <=0:
                                 print("Please enter a number above 0\n")
                             else:
@@ -69,7 +69,7 @@ while repeat == "":
             while True:
                 surface_area = 2 * (height*width + width*length + length*height)
                 volume = length * height * width
-                print(f"Surface Area = {surface_area}\nVolume = {volume}\n\n")
+                print(f"Surface Area = {surface_area} cm\nVolume = {volume} cm\n\n")
                 break
             repeat = input("Would you like to continue?\nPress any key to continue,\nPress <ENTER> to repeat:  ")
         else:
