@@ -1,7 +1,7 @@
 # Author: Zach Fryer
 # Title: Area/Perimeter Calculator
 # Date: 29/10/2025
-# Version 1.4
+# Version 1.5
 
 print("Hello User, welcome to my Area/Perimeter calculator! \nPlease answer the following questions so I can calculate for you!\n\n")
 repeat = ""
