@@ -31,7 +31,7 @@ while repeat == "":
             print()
             while True:
                 area = length * width
-                perimeter = length * 2 + width * 2
+                perimeter = 2 * (length + width)
                 print(f"Area = {area} cm²\nPerimeter = {perimeter} cm\n\n")
                 break
             repeat = input("Would you like to continue?\nPress <ENTER> to repeat:  ")
