@@ -37,5 +37,5 @@ while repeat == '':
     perimeter = (width + length) * 2 # Calculate perimeter
     total_cost = perimeter * fence_cost_m # Calculate total
     print(f"\n\nThe total price to fully fence the entire area is ${total_cost} ")
-    repeat = input("\n\nPress <ENTER> if you wish to repeat: ") # Loop program
+    repeat = input("\n\nPress any key to end the program\nPress <ENTER> if you wish to repeat: ") # Loop program
 print("Thank you for using this calculator")
